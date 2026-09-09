@@ -1,11 +1,11 @@
 required_providers {
-  local = {
-    source  = "hashicorp/local"
-    version = "~> 2.5"
+  null = {
+    source  = "hashicorp/null"
+    version = "~> 3.2"
   }
 }
 
-provider "local" "this" {}
+provider "null" "this" {}
 
 variable "deployment_name" {
   type = string
@@ -25,11 +25,11 @@ component "test" {
   }
 
   providers = {
-    local = provider.local.this
+    null = provider.null.this
   }
 }
 
-output "file_paths" {
+output "ids" {
   type  = list(string)
-  value = component.test.file_paths
+  value = component.test.ids
 }
