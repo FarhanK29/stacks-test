@@ -1,12 +1,3 @@
-identity_token "default" {
-  audience = ["stacks.terraform.io"]
-}
-
-store "local" "state" {
-  # Using the built-in local store keeps this test stack fully self-contained
-  # (no cloud account or HCP Terraform state store required).
-}
-
 deployment "dev" {
   inputs = {
     deployment_name = "dev"
