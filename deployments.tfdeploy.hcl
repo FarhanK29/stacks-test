@@ -3,7 +3,7 @@ deployment "dev" {
     deployment_name = "dev"
     resource_count  = 5
   }
-  destroy = true
+  # destroy = true
 }
 
 deployment "staging" {
@@ -11,7 +11,7 @@ deployment "staging" {
     deployment_name = "staging"
     resource_count  = 5
   }
-  destroy = true
+  # destroy = true
 }
 
 deployment "prod" {
@@ -19,5 +19,5 @@ deployment "prod" {
     deployment_name = "prod"
     resource_count  = 5
   }
-  destroy = true
+  # destroy = true
 }
