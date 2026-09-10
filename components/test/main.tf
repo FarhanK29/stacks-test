@@ -19,7 +19,7 @@ variable "deployment_name" {
 variable "resource_count" {
   type        = number
   description = "Number of resources to create in this deployment."
-  default     = 5
+  default     = 2
 }
 
 resource "null_resource" "test" {

@@ -18,7 +18,7 @@ variable "deployment_name" {
 
 variable "resource_count" {
   type    = number
-  default = 5
+  default = 2
 }
 
 component "test" {
