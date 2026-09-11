@@ -23,7 +23,7 @@ variable "resource_count" {
 }
 
 resource "null_resource" "test" {
-  count    = var.resource_count
+  count = var.resource_count
 }
 
 # resource "random_pet" "test" {
