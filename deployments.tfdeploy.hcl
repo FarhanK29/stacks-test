@@ -18,3 +18,10 @@ deployment "prod" {
     random_pet_count = 7
   }
 }
+
+deployment "qa" {
+  inputs = {
+    resource_count   = 2
+    random_pet_count = 3
+  }
+}
