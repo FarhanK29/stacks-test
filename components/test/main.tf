@@ -20,5 +20,5 @@ resource "null_resource" "test" {
 }
 
 resource "random_pet" "extra" {
-  count = 0
+  count = 1
 }
