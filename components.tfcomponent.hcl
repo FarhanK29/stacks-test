@@ -3,9 +3,14 @@ required_providers {
     source  = "hashicorp/null"
     version = "~> 3.2"
   }
+  random = {
+    source  = "hashicorp/random"
+    version = "~> 3.9"
+  }
 }
 
 provider "null" "this" {}
+provider "random" "this" {}
 
 variable "resource_count" {
   type = number
@@ -19,6 +24,7 @@ component "test" {
   }
 
   providers = {
-    null = provider.null.this
+    null   = provider.null.this
+    random = provider.random.this
   }
 }

@@ -4,6 +4,10 @@ terraform {
       source  = "hashicorp/null"
       version = "~> 3.2"
     }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.9"
+    }
   }
 }
 
@@ -13,4 +17,8 @@ variable "resource_count" {
 
 resource "null_resource" "test" {
   count = var.resource_count
+}
+
+resource "random_pet" "extra" {
+  count = 1
 }
