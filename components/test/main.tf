@@ -15,10 +15,14 @@ variable "resource_count" {
   type = number
 }
 
+variable "random_pet_count" {
+  type = number
+}
+
 resource "null_resource" "test" {
   count = var.resource_count
 }
 
 resource "random_pet" "extra" {
-  count = 1
+  count = var.random_pet_count
 }

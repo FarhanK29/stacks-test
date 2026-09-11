@@ -16,11 +16,16 @@ variable "resource_count" {
   type = number
 }
 
+variable "random_pet_count" {
+  type = number
+}
+
 component "test" {
   source = "./components/test"
 
   inputs = {
-    resource_count = var.resource_count
+    resource_count   = var.resource_count
+    random_pet_count = var.random_pet_count
   }
 
   providers = {
