@@ -1,7 +1,7 @@
 deployment "dev" {
   inputs = {
-    resource_count   = 2
-    random_pet_count = 3
+    resource_count   = 3
+    random_pet_count = 4
   }
 }
 
