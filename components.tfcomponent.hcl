@@ -3,7 +3,7 @@ required_providers {
     source  = "hashicorp/null"
     version = "~> 3.2"
   }
-  #Comment out this block
+  # Comment out this block
   # random = {
   #   source  = "hashicorp/random"
   #   version = "~> 3.9"
@@ -42,7 +42,7 @@ output "ids" {
   value = component.test.ids
 }
 
-#comment this block out
+# comment this block out
 # output "random_names" {
 #   type  = list(string)
 #   value = component.test.random_names
