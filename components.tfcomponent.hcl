@@ -3,6 +3,7 @@ required_providers {
     source  = "hashicorp/null"
     version = "~> 3.2"
   }
+  # Comment out this block
   # random = {
   #   source  = "hashicorp/random"
   #   version = "~> 3.9"
@@ -10,7 +11,8 @@ required_providers {
 }
 
 provider "null" "this" {}
-# provider "random" "this" {}
+
+# provider "random" "this" {} #comment out
 
 variable "deployment_name" {
   type = string
@@ -31,7 +33,7 @@ component "test" {
 
   providers = {
     null = provider.null.this
-    # random = provider.random.this
+    # random = provider.random.this #comment out
   }
 }
 
@@ -40,6 +42,7 @@ output "ids" {
   value = component.test.ids
 }
 
+# comment this block out
 # output "random_names" {
 #   type  = list(string)
 #   value = component.test.random_names
