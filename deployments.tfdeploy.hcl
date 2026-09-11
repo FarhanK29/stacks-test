@@ -1,17 +1,17 @@
 deployment "dev" {
   inputs = {
-    resource_count = 1
+    resource_count = 0
   }
 }
 
 deployment "staging" {
   inputs = {
-    resource_count = 2
+    resource_count = 0
   }
 }
 
 deployment "prod" {
   inputs = {
-    resource_count = 3
+    resource_count = 0
   }
 }
