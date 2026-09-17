@@ -25,3 +25,10 @@ deployment "prod" {
     random_pet_count  = 0
   }
 }
+
+deployment "prod"{
+  inputs = {
+    resource_count    = 2
+    random_pet_count  = 4
+  }
+}
