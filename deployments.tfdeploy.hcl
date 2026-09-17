@@ -20,7 +20,7 @@ deployment "qa" {
 }
 
 deployment "prod" {
-  inputs - {
+  inputs = {
     resource_count    = 5
     random_pet_count  = 10
   }
