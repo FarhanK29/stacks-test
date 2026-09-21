@@ -1,13 +1,13 @@
 deployment "dev" {
   inputs = {
-    resource_count   = 2
+    resource_count   = 4
     random_pet_count = 0
   }
 }
 
 deployment "staging" {
   inputs = {
-    resource_count   = 3
+    resource_count   = 5
     random_pet_count = 0
   }
 }
@@ -21,7 +21,7 @@ deployment "staging" {
 
 deployment "prod" {
   inputs = {
-    resource_count    = 4
+    resource_count    = 6
     random_pet_count  = 0
   }
 }
