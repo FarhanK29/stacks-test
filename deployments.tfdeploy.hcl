@@ -12,9 +12,9 @@ deployment "staging" {
   }
 }
 
-deployment "prod" {
-  inputs = {
-    resource_count    = 9
-    random_pet_count  = 0
-  }
-}
+# deployment "prod" {
+#   inputs = {
+#     resource_count    = 9
+#     random_pet_count  = 0
+#   }
+# }
