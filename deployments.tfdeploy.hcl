@@ -1,6 +1,6 @@
 deployment_auto_approve "always" {
   check {
-    condition = true
+    condition = context.plan.changes.add >= 0
     reason    = "Automatically approve all plans."
   }
 }
