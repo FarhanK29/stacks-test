@@ -1,9 +1,9 @@
-deployment "dev" {
-  inputs = {
-    resource_count   = 7
-    random_pet_count = 0
-  }
-}
+# deployment "dev" {
+#   inputs = {
+#     resource_count   = 7
+#     random_pet_count = 0
+#   }
+# }
 
 # deployment "staging" {
 #   inputs = {
