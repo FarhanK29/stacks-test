@@ -5,12 +5,12 @@ deployment "dev" {
   }
 }
 
-deployment "staging" {
-  inputs = {
-    resource_count   = 8
-    random_pet_count = 0
-  }
-}
+# deployment "staging" {
+#   inputs = {
+#     resource_count   = 8
+#     random_pet_count = 0
+#   }
+# }
 
 # deployment "qa" {
 #   inputs = {
