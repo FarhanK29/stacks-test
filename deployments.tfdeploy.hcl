@@ -1,13 +1,14 @@
+upstream_input "network_stack" {
+  type   = "stack"
+  source = "app.staging.terraform.io/farhan/Default Project/stacks-test"
+}
+
 deployment "staging" {
   inputs = {
     resource_count   = 7
     random_pet_count = 0
-    vpc_id           = "vpc-staging-test"
+    vpc_id           = upstream_input.network_stack.vpc_id_staging
   }
-}
-
-publish_output "vpc_id_staging" {
-  value = deployment.staging.vpc_id
 }
 
 
