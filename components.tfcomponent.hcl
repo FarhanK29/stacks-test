@@ -20,6 +20,15 @@ variable "random_pet_count" {
   type = number
 }
 
+variable "vpc_id" {
+  type = string
+}
+
+output "vpc_id" {
+  type  = string
+  value = var.vpc_id
+}
+
 component "test" {
   source = "./components/test"
 

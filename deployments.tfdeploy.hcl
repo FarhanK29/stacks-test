@@ -1,9 +1,9 @@
-deployment "dev" {
+deployment "staging" {
   inputs = {
     resource_count   = 7
     random_pet_count = 0
+    vpc_id           = "vpc-staging-test"
   }
-  
 }
 
 publish_output "vpc_id_staging" {
