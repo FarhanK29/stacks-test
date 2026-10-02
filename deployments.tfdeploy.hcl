@@ -1,6 +1,6 @@
 upstream_input "network_stack" {
   type   = "stack"
-  source = "app.staging.terraform.io/farhan/Default Project/stacks-test"
+  source = "app.staging.terraform.io/test-621759812759821/Default Project/stacks-test"
 }
 
 deployment "staging" {
