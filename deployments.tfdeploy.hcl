@@ -3,7 +3,13 @@ deployment "dev" {
     resource_count   = 7
     random_pet_count = 0
   }
+  
 }
+
+publish_output "vpc_id_staging" {
+  value = deployment.staging.vpc_id
+}
+
 
 # deployment "staging" {
 #   inputs = {
